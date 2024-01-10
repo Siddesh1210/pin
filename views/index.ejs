@@ -1,0 +1,20 @@
+<% include ./partials/header.ejs %>  
+    <div class="w-full h-screen flex items-center justify-center bg-[url(https://images.unsplash.com/photo-1579547621706-1a9c79d5c9f1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-center bg-cover">
+        <div class="w-[400px] bg-white px-20 py-10 rounded-[30px]">
+            <h1 class="text-2xl text-center font-semibold text-zinc-700 tracking-tighter capitalize mb-3">
+                Welcome to PinCraft
+            </h1>
+            <form action="/register" method="post">
+                <input type="text" name="fullname" placeholder="full name" class="border-2 rounded-xl block mt-2 w-full px-3 py-3">
+                <input type="text" name="username" placeholder="username" class="border-2 rounded-xl block mt-2 w-full px-3 py-3">
+                <input type="email" name="email" placeholder="email" class="border-2 rounded-xl block mt-2 w-full px-3 py-3">
+                <input type="password" name="password" placeholder="password" class="border-2 rounded-xl block mt-2 w-full px-3 py-3">
+                <input type="submit" value="Create your Account" class="border-2 rounded-full block mt-2 w-full px-3 py-3 bg-red-500 text-white cursor-pointer">
+                <p class="text-xs font-semibold text-zinc-700 mt-5 mx-auto w-3/4 text-center">By continuing, you agree to PinCraft's Terms of Service; and acknowledge that you've read our Privacy Policy. Notice at collection </p>
+                <a href="/login" class=" text-center mt-3 font-semibold text-zinc-700 block text-sm">Already has Account? <span class="text-purple-700">Login</span></a>
+            </form>
+            
+        </div>
+    </div>
+<% include ./partials/footer.ejs %>  
+

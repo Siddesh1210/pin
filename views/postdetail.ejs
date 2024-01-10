@@ -1,0 +1,12 @@
+<% include ./partials/header.ejs %>  
+    <div class="w-full px-5 py-3 flex flex-wrap min-h-screen bg-zinc-700 text-white items-start justify-center items-center">
+        <div class="w-1/3 h-[500px] p-4 overflow-hidden">
+            <img src="/images/uploads/<%=post.image%>" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <div class="w-1/3 p-4">
+            <h1 class="text-2xl font-semibold">Title : <%=post.title%></h1>
+            <h3 class="text-sm font-semibold">Description : <span class=" opacity-50"><%=post.description%></span> </h3>
+            <h5 class="text-sm font-semibold">By : @<%=user.username%></h5>
+        </div>
+    </div>
+<% include ./partials/footer.ejs %>  
